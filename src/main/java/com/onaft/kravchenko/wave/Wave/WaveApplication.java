@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import java.util.Random;
 
 @SpringBootApplication
-public class WaveApplication implements CommandLineRunner{
+public class WaveApplication{
 	@Autowired
 	AccountService accountService; //= context.getBean(AccountService.class);;
 
@@ -22,7 +22,7 @@ public class WaveApplication implements CommandLineRunner{
 		SpringApplication.run(WaveApplication.class, args);
 	}
 
-	@Override
+	/*@Override
 	public void run(String... args) throws Exception {
 		Random r = new Random();
 
