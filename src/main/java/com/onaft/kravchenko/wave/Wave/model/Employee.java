@@ -11,9 +11,9 @@ public class Employee {
     private String code_ident;
     private String phone;
     private String address;
-    private String position;
+    private int id_position;
 
-    public Employee(int id_employee, Date date_reg, Date date_birthday, String name, String code_pas, String code_ident, String phone, String address, String position) {
+    public Employee(int id_employee, Date date_reg, Date date_birthday, String name, String code_pas, String code_ident, String phone, String address, int position) {
         this.id_employee = id_employee;
         this.date_reg = date_reg;
         this.date_birthday = date_birthday;
@@ -22,7 +22,7 @@ public class Employee {
         this.code_ident = code_ident;
         this.phone = phone;
         this.address = address;
-        this.position = position;
+        this.id_position = position;
     }
 
     public int getId_employee() {
@@ -89,11 +89,11 @@ public class Employee {
         this.address = address;
     }
 
-    public String getPosition() {
-        return position;
+    public int getPosition() {
+        return id_position;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
+    public void setPosition(int position) {
+        this.id_position = position;
     }
 }

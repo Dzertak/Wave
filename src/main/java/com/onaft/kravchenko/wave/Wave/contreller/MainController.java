@@ -4,6 +4,7 @@ import com.onaft.kravchenko.wave.Wave.model.Account;
 import com.onaft.kravchenko.wave.Wave.service.AccountService;
 import com.onaft.kravchenko.wave.Wave.service.impl.AccountServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,14 +20,15 @@ public class MainController {
                     method = RequestMethod.GET,
                     produces = "application/json")
     public String getHelloWorld() {
-        return "Hello World";
+        return "Hello World1";
     }
 
-    /*@RequestMapping(value = "/insert",
-            method = RequestMethod.GET,
+    @RequestMapping(value = "/insertAccount",
+            method = RequestMethod.POST,
             produces = "application/json")
-    public void insertAccount() {
-        accountService.insert(new Account(2,"admin2","admin2"));
-    }*/
+    public String insertAccount(@RequestBody Account account) {
+        accountService.insert(account);
+        return "done";
+    }
 
 }
