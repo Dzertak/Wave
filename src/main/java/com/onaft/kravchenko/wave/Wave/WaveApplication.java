@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import java.util.Random;
 
 @SpringBootApplication
-public class WaveApplication{
+public class WaveApplication {
 	@Autowired
 	AccountService accountService; //= context.getBean(AccountService.class);;
 

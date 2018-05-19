@@ -4,11 +4,15 @@ import java.io.Serializable;
 
 public class Account implements Serializable{
     private int id_account;
+    private int id_employee;
+    private int id_type_access;
     private String login;
     private String password;
 
-    public Account(int id_account, String login, String password) {
+    public Account(int id_account, int id_employee, int id_type_access, String login, String password) {
         this.id_account = id_account;
+        this.id_employee = id_employee;
+        this.id_type_access = id_type_access;
         this.login = login;
         this.password = password;
     }
@@ -19,6 +23,22 @@ public class Account implements Serializable{
 
     public void setId_account(int id_account) {
         this.id_account = id_account;
+    }
+
+    public int getId_employee() {
+        return id_employee;
+    }
+
+    public void setId_employee(int id_employee) {
+        this.id_employee = id_employee;
+    }
+
+    public int getId_type_access() {
+        return id_type_access;
+    }
+
+    public void setId_type_access(int id_type_access) {
+        this.id_type_access = id_type_access;
     }
 
     public String getLogin() {
@@ -35,14 +55,5 @@ public class Account implements Serializable{
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "Account{" +
-                "id_account=" + id_account +
-                ", login='" + login + '\'' +
-                ", password='" + password + '\'' +
-                '}';
     }
 }
