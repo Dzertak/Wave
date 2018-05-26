@@ -48,6 +48,13 @@ public class AccountDaoImpl extends JdbcDaoSupport implements AccountDao {
     }
 
     @Override
+    public Account findAccountAuthorization(String login, String password) {
+        String sql = "Select * from accounts where login='?' and password='?'";
+        Account account =  getJdbcTemplate().queryForObject(sql, new Object[] { login,password },Account.class);
+        return account;
+    }
+
+    @Override
     public String findLoginById(long id_account) {
         return null;
     }

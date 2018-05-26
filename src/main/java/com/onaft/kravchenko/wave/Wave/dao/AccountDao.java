@@ -9,6 +9,7 @@ public interface AccountDao {
     void inserBatch(List<Account> accounts);
     List<Account> loadAllAccount();
     Account findAccountById(long id_account);
+    Account findAccountAuthorization(String login, String password);
     String findLoginById(long id_account);
     int getTotalNumberAccount();
 }
