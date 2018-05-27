@@ -29,7 +29,7 @@ public class MainController {
     }
 
     @RequestMapping(value = "/authorize",
-    method = RequestMethod.POST,
+    method = RequestMethod.GET,
     produces = "application/json")
     public Account auth(@RequestParam("login") String login, @RequestParam("password") String password){
        return accountService.getAccountAuthorization(login,password);

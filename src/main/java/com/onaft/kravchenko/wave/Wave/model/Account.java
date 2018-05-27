@@ -9,6 +9,9 @@ public class Account implements Serializable{
     private String login;
     private String password;
 
+    public Account(){
+
+    }
     public Account(int id_employee, int id_type_access, String login, String password) {
         this.id_account = id_account;
         this.id_employee = id_employee;
