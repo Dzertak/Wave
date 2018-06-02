@@ -8,13 +8,17 @@ public class Event {
     private String description;
     private Date date_start;
     private Date date_end;
+    private String address;
 
-    public Event(int id_event, String name, String description, Date date_start, Date date_end) {
+    public Event(){}
+
+    public Event(int id_event, String name, String description, Date date_start, Date date_end, String address) {
         this.id_event = id_event;
         this.name = name;
         this.description = description;
         this.date_start = date_start;
         this.date_end = date_end;
+        this.address = address;
     }
 
     public int getId_event() {
@@ -55,5 +59,13 @@ public class Event {
 
     public void setDate_end(Date date_end) {
         this.date_end = date_end;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
