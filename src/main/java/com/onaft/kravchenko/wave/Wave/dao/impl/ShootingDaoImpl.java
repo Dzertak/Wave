@@ -35,4 +35,12 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
         List<Event> events = getJdbcTemplate().query(sql, new BeanPropertyRowMapper(Event.class));
         return events;
     }
+
+    @Override
+    public List<Event> findShootingAll() {
+        String sql = "SELECT even.id_event, even.name, even.description, even.date_start, even.date_end, even.address\n" +
+                "FROM public.events even WHERE CURRENT_DATE < even.date_start";
+        List<Event> events = getJdbcTemplate().query(sql, new BeanPropertyRowMapper(Event.class));
+        return events;
+    }
 }

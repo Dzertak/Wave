@@ -48,4 +48,11 @@ public class MainController {
     public List<Event> shootingEvent(@RequestParam("id_employee") String id_employee){
         return shootingService.findShooting(id_employee);
     }
+
+    @RequestMapping(value = "/shootingEventsAll",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public List<Event> shootingEventAll(){
+        return shootingService.findShootingAll();
+    }
 }

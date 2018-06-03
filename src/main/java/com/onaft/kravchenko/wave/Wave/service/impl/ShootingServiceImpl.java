@@ -19,4 +19,9 @@ public class ShootingServiceImpl implements ShootingService {
     public List<Event> findShooting(String id_employee) {
         return shootingDao.findShooting(id_employee);
     }
+
+    @Override
+    public List<Event> findShootingAll() {
+        return shootingDao.findShootingAll();
+    }
 }

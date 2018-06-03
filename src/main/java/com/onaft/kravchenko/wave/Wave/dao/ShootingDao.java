@@ -6,5 +6,6 @@ import com.onaft.kravchenko.wave.Wave.model.Event;
 import java.util.List;
 
 public interface ShootingDao {
-    List<Event> findShooting(String v);
+    List<Event> findShooting(String id_employee);
+    List<Event> findShootingAll();
 }

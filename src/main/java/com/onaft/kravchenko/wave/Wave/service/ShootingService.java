@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface ShootingService {
     List<Event> findShooting(String id_employee);
+    List<Event> findShootingAll();
 }
