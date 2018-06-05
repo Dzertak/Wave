@@ -6,6 +6,7 @@ public class Customer {
     private String phone;
     private String adress;
 
+    public Customer(){}
     public Customer(int id_customer, String name, String phone, String adress) {
         this.id_customer = id_customer;
         this.name = name;

@@ -13,6 +13,8 @@ public class Employee {
     private String address;
     private int id_position;
 
+    public Employee(){}
+
     public Employee(int id_employee, Date date_reg, Date date_birthday, String name, String code_pas, String code_ident, String phone, String address, int position) {
         this.id_employee = id_employee;
         this.date_reg = date_reg;

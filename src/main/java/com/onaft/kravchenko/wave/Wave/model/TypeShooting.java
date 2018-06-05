@@ -4,6 +4,7 @@ public class TypeShooting {
     private int id_type_shooting;
     private String name;
 
+    public TypeShooting(){}
     public TypeShooting(int id_type_shooting, String name) {
         this.id_type_shooting = id_type_shooting;
         this.name = name;

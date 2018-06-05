@@ -1,7 +1,6 @@
 package com.onaft.kravchenko.wave.Wave.contreller;
 
-import com.onaft.kravchenko.wave.Wave.model.Account;
-import com.onaft.kravchenko.wave.Wave.model.Event;
+import com.onaft.kravchenko.wave.Wave.model.*;
 import com.onaft.kravchenko.wave.Wave.service.AccountService;
 import com.onaft.kravchenko.wave.Wave.service.impl.AccountServiceImpl;
 import com.onaft.kravchenko.wave.Wave.service.impl.ShootingServiceImpl;
@@ -54,5 +53,26 @@ public class MainController {
             produces = "application/json")
     public List<Event> shootingEventAll(){
         return shootingService.findShootingAll();
+    }
+
+    @RequestMapping(value = "/typeShootingAll",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public List<TypeShooting> findTypeShootingALL(){
+        return shootingService.findTypeShootingAll();
+    }
+
+    @RequestMapping(value = "/employeesAll",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public List<Employee> employeesAll(){
+        return shootingService.findEmployeeAll();
+    }
+
+    @RequestMapping(value = "/customersAll",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public List<Customer> customersAll(){
+        return shootingService.findCustomerAll();
     }
 }
