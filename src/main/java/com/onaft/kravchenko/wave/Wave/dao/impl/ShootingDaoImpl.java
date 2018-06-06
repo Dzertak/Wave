@@ -52,7 +52,8 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     @Override
     public List<Employee> findEmployeeAll() {
-        String sql = "SELECT * FROM employees";
+        String sql = "SELECT id_employee, name, phone, date_birthday, address, date_reg, code_pas, code_ident, id_position" +
+                " FROM employees";
         List<Employee> employees = getJdbcTemplate().query(sql, new BeanPropertyRowMapper(Employee.class));
         return employees;
     }
