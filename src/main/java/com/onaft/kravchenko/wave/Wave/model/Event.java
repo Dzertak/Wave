@@ -1,24 +1,29 @@
 package com.onaft.kravchenko.wave.Wave.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Event {
+public class Event implements Serializable {
     private int id_event;
     private String name;
     private String description;
     private Date date_start;
     private Date date_end;
     private String address;
+    private int id_shooting;
 
-    public Event(){}
+    public Event() {
 
-    public Event(int id_event, String name, String description, Date date_start, Date date_end, String address) {
+    }
+
+    public Event(int id_event, String name, String description, Date date_start, Date date_end, String address, int id_shooting) {
         this.id_event = id_event;
         this.name = name;
         this.description = description;
         this.date_start = date_start;
         this.date_end = date_end;
         this.address = address;
+        this.id_shooting = id_shooting;
     }
 
     public int getId_event() {
@@ -67,5 +72,13 @@ public class Event {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public int getId_shooting() {
+        return id_shooting;
+    }
+
+    public void setId_shooting(int id_shooting) {
+        this.id_shooting = id_shooting;
     }
 }

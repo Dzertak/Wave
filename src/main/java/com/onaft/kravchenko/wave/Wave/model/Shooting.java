@@ -1,13 +1,18 @@
 package com.onaft.kravchenko.wave.Wave.model;
 
-public class Shooting {
+import java.io.Serializable;
+
+public class Shooting implements Serializable {
     private int id_shooting;
-    private int id_type_shooting;
+    private TypeShooting typeShooting;
     private String purpose;
 
-    public Shooting(int id_shooting, int id_type_shooting, String purpose) {
+    public Shooting() {
+    }
+
+    public Shooting(int id_shooting, TypeShooting typeShooting, String purpose) {
         this.id_shooting = id_shooting;
-        this.id_type_shooting = id_type_shooting;
+        this.typeShooting = typeShooting;
         this.purpose = purpose;
     }
 
@@ -19,12 +24,12 @@ public class Shooting {
         this.id_shooting = id_shooting;
     }
 
-    public int getId_type_shooting() {
-        return id_type_shooting;
+    public TypeShooting getTypeShooting() {
+        return typeShooting;
     }
 
-    public void setId_type_shooting(int id_type_shooting) {
-        this.id_type_shooting = id_type_shooting;
+    public void setTypeShooting(TypeShooting typeShooting) {
+        this.typeShooting = typeShooting;
     }
 
     public String getPurpose() {

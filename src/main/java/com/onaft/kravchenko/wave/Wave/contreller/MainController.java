@@ -75,4 +75,32 @@ public class MainController {
     public List<Customer> customersAll(){
         return shootingService.findCustomerAll();
     }
+
+    @RequestMapping(value = "/shootingByIdShooting",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public Shooting shootingByIdShooting(@RequestParam("id_shooting") int id_shooting){
+        return shootingService.findShootingByShooting(id_shooting);
+    }
+
+    @RequestMapping(value = "/customerByIdShooting",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public Customer customerByIdShooting(@RequestParam("id_shooting") int id_shooting){
+        return shootingService.findCustomerByShooting(id_shooting);
+    }
+
+    @RequestMapping(value = "/contractByIdShooting",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public Contract contractByIdShooting(@RequestParam("id_shooting") int id_shooting){
+        return shootingService.findContractByShooting(id_shooting);
+    }
+
+    @RequestMapping(value = "/employeesByIdShooting",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public List<Employee> employeesByIdShooting(@RequestParam("id_shooting") int id_shooting){
+        return shootingService.findEmployeeByShooting(id_shooting);
+    }
 }

@@ -14,7 +14,9 @@ public class Employee implements Serializable {
     private String address;
     private int id_position;
 
-    public Employee(){}
+    public Employee(){
+
+    }
 
     public Employee(int id_employee, Date date_reg, Date date_birthday, String name, String code_pas, String code_ident, String phone, String address, int id_position) {
         this.id_employee = id_employee;
@@ -92,11 +94,11 @@ public class Employee implements Serializable {
         this.address = address;
     }
 
-    public int getPosition() {
+    public int getId_position() {
         return id_position;
     }
 
-    public void setPosition(int id_position) {
+    public void setId_position(int id_position) {
         this.id_position = id_position;
     }
 }

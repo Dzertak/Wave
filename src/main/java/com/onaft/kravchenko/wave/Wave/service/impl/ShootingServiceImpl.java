@@ -38,4 +38,24 @@ public class ShootingServiceImpl implements ShootingService {
     public List<Customer> findCustomerAll() {
         return shootingDao.findCustomerAll();
     }
+
+    @Override
+    public Customer findCustomerByShooting(int id_shooting) {
+        return shootingDao.findCustomerByShooting(id_shooting);
+    }
+
+    @Override
+    public Contract findContractByShooting(int id_shooting) {
+        return shootingDao.findContractByShooting(id_shooting);
+    }
+
+    @Override
+    public Shooting findShootingByShooting(int id_shooting) {
+        return shootingDao.findShootingByShooting(id_shooting);
+    }
+
+    @Override
+    public List<Employee> findEmployeeByShooting(int id_shooting) {
+        return shootingDao.findEmployeeByShooting(id_shooting);
+    }
 }

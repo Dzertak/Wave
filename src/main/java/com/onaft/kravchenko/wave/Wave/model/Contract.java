@@ -7,6 +7,7 @@ public class Contract {
     private int id_shooting;
     private String description;
 
+    public Contract(){}
     public Contract(int id_contract, int id_customer, int id_event, int id_shooting, String description) {
         this.id_contract = id_contract;
         this.id_customer = id_customer;

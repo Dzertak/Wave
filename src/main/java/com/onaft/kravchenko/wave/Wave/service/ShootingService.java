@@ -10,4 +10,8 @@ public interface ShootingService {
     List<TypeShooting> findTypeShootingAll();
     List<Employee> findEmployeeAll();
     List<Customer> findCustomerAll();
+    Customer findCustomerByShooting(int id_shooting);
+    Contract findContractByShooting(int id_shooting);
+    Shooting findShootingByShooting(int id_shooting);
+    List<Employee> findEmployeeByShooting(int id_shooting);
 }
