@@ -1,29 +1,26 @@
 package com.onaft.kravchenko.wave.Wave.model;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class Event implements Serializable {
     private int id_event;
     private String name;
     private String description;
-    private Date date_start;
-    private Date date_end;
     private String address;
-    private int id_shooting;
+    private Shooting shooting;
+    private int id_customer;
 
     public Event() {
 
     }
 
-    public Event(int id_event, String name, String description, Date date_start, Date date_end, String address, int id_shooting) {
+    public Event(int id_event, String name, String description, String address, Shooting shooting, int id_customer) {
         this.id_event = id_event;
         this.name = name;
         this.description = description;
-        this.date_start = date_start;
-        this.date_end = date_end;
         this.address = address;
-        this.id_shooting = id_shooting;
+        this.shooting = shooting;
+        this.id_customer = id_customer;
     }
 
     public int getId_event() {
@@ -50,22 +47,6 @@ public class Event implements Serializable {
         this.description = description;
     }
 
-    public Date getDate_start() {
-        return date_start;
-    }
-
-    public void setDate_start(Date date_start) {
-        this.date_start = date_start;
-    }
-
-    public Date getDate_end() {
-        return date_end;
-    }
-
-    public void setDate_end(Date date_end) {
-        this.date_end = date_end;
-    }
-
     public String getAddress() {
         return address;
     }
@@ -74,11 +55,19 @@ public class Event implements Serializable {
         this.address = address;
     }
 
-    public int getId_shooting() {
-        return id_shooting;
+    public Shooting getShooting() {
+        return shooting;
     }
 
-    public void setId_shooting(int id_shooting) {
-        this.id_shooting = id_shooting;
+    public void setShooting(Shooting shooting) {
+        this.shooting = shooting;
+    }
+
+    public int getId_customer() {
+        return id_customer;
+    }
+
+    public void setId_customer(int id_customer) {
+        this.id_customer = id_customer;
     }
 }

@@ -1,19 +1,17 @@
 package com.onaft.kravchenko.wave.Wave.model;
 
-public class Contract {
+import java.io.Serializable;
+
+public class Contract implements Serializable{
     private int id_contract;
-    private int id_customer;
     private int id_event;
     private int id_shooting;
-    private String description;
 
     public Contract(){}
-    public Contract(int id_contract, int id_customer, int id_event, int id_shooting, String description) {
+    public Contract(int id_contract, int id_event, int id_shooting) {
         this.id_contract = id_contract;
-        this.id_customer = id_customer;
         this.id_event = id_event;
         this.id_shooting = id_shooting;
-        this.description = description;
     }
 
     public int getId_contract() {
@@ -22,14 +20,6 @@ public class Contract {
 
     public void setId_contract(int id_contract) {
         this.id_contract = id_contract;
-    }
-
-    public int getId_customer() {
-        return id_customer;
-    }
-
-    public void setId_customer(int id_customer) {
-        this.id_customer = id_customer;
     }
 
     public int getId_event() {
@@ -48,11 +38,4 @@ public class Contract {
         this.id_shooting = id_shooting;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }

@@ -3,6 +3,7 @@ package com.onaft.kravchenko.wave.Wave.dao.impl;
 import com.onaft.kravchenko.wave.Wave.dao.ShootingDao;
 import com.onaft.kravchenko.wave.Wave.model.*;
 import com.onaft.kravchenko.wave.Wave.service.ShootingService;
+import com.onaft.kravchenko.wave.Wave.util.EventRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -14,6 +15,9 @@ import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Repository
@@ -30,12 +34,14 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     @Override
     public List<Event> findShooting(String id_employee) {
-        String sql = "SELECT even.id_event, even.name, even.description, even.date_start, even.date_end, even.address, sh.id_shooting\n" +
-                "FROM public.events even, public.contracts con, public.shooting sh, public.shooting_groups shg\n" +
-                "Where CURRENT_DATE < even.date_start and\n" +
-                "(shg.id_employee = "+id_employee+" and shg.id_shooting = sh.id_shooting and \n" +
-                " sh.id_shooting = con.id_shooting and con.id_event = even.id_event)";
-        List<Event> events = getJdbcTemplate().query(sql, new BeanPropertyRowMapper(Event.class));
+        String sql = "SELECT even.description, even.id_event, even.name, even.address, even.id_customer,\n" +
+                "sh.id_shooting, sh.id_type_shooting, sh.purpose, sh.date_start, sh.date_end,\n" +
+                "tsh.name as type_shooting_name\n" +
+                "FROM public.events even, public.contracts con, public.shooting sh, public.shooting_groups shg, public.types_shooting tsh\n" +
+                "Where CURRENT_DATE < sh.date_start and\n" +
+                " (shg.id_employee = "+id_employee+" and shg.id_shooting = sh.id_shooting and\n" +
+                "  tsh.id_type_shooting=sh.id_type_shooting and sh.id_shooting = con.id_shooting and con.id_event = even.id_event)";
+        List<Event> events = getJdbcTemplate().query(sql, new EventRowMapper());
         return events;
     }
 
@@ -51,10 +57,13 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     @Override
     public List<Event> findShootingAll() {
-        String sql = "SELECT even.id_event, even.name, even.description, even.date_start, even.date_end, even.address, sh.id_shooting\n" +
-                "FROM public.events even, public.contracts con, public.shooting sh " +
-                "WHERE CURRENT_DATE < even.date_start and (sh.id_shooting = con.id_shooting and con.id_event = even.id_event)";
-        List<Event> events = getJdbcTemplate().query(sql, new BeanPropertyRowMapper(Event.class));
+        String sql = "SELECT even.description, even.id_event, even.name, even.address, even.id_customer,\n" +
+                "sh.id_shooting, sh.id_type_shooting, sh.purpose, sh.date_start, sh.date_end,\n" +
+                "tsh.name as type_shooting_name\n" +
+                "FROM public.events even, public.contracts con, public.shooting sh, public.types_shooting tsh\n" +
+                "Where CURRENT_DATE < sh.date_start and\n" +
+                " (tsh.id_type_shooting=sh.id_type_shooting and sh.id_shooting = con.id_shooting and con.id_event = even.id_event)";
+        List<Event> events = getJdbcTemplate().query(sql, new EventRowMapper());
         return events;
     }
 
@@ -82,9 +91,9 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     @Override
     public Customer findCustomerByShooting(int id_shooting) {
-        String sql = "SELECT c.id_customer, c.name, c.phone, c.address\n" +
-                "\tFROM public.customers c, public.contracts con\n" +
-                "\tWHERE c.id_customer = con.id_shooting and con.id_shooting = "+String.valueOf(id_shooting)+";";
+        String sql = "SELECT cus.id_customer, cus.name, cus.phone, cus.address\n" +
+                "\tFROM public.customers cus, public.contracts con, public.events e\n" +
+                "\tWHERE con.id_shooting = "+String.valueOf(id_shooting)+" and con.id_event=e.id_event and e.id_customer = cus.id_customer;";
         Customer customer = getJdbcTemplate().queryForObject(
                 sql, new Object[]{}, new RowMapper<Customer>() {
                     @Override
@@ -103,7 +112,7 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     @Override
     public Contract findContractByShooting(int id_shooting) {
-        String sql = "SELECT id_contract, id_event, id_shooting, id_customer, description\n" +
+        String sql = "SELECT id_contract, id_event, id_shooting\n" +
                 "\tFROM public.contracts\n" +
                 "\tWhere id_shooting = "+String.valueOf(id_shooting)+";";
         Contract contract = getJdbcTemplate().queryForObject(
@@ -113,9 +122,7 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
                         Contract contract1 = new Contract();
                         contract1.setId_contract(resultSet.getInt(1));
                         contract1.setId_event(resultSet.getInt(2));
-                        contract1.setId_customer(resultSet.getInt(4));
                         contract1.setId_shooting(resultSet.getInt(3));
-                        contract1.setDescription(resultSet.getString(5));
                         return contract1;
                     }
                 });
@@ -124,7 +131,7 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     @Override
     public Shooting findShootingByShooting(int id_shooting) {
-        String sql = "SELECT id_shooting, s.id_type_shooting, purpose, ts.name\n" +
+        String sql = "SELECT s.id_shooting, s.id_type_shooting, s.purpose, ts.name\n" +
                 "\tFROM public.shooting as s, public.types_shooting ts\n" +
                 "\tWHERE "+String.valueOf(id_shooting)+" = s.id_shooting and s.id_type_shooting = ts.id_type_shooting;";
         Shooting shooting = getJdbcTemplate().queryForObject(
