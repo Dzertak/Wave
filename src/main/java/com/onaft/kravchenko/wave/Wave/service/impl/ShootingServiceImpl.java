@@ -58,4 +58,29 @@ public class ShootingServiceImpl implements ShootingService {
     public List<Employee> findEmployeeByShooting(int id_shooting) {
         return shootingDao.findEmployeeByShooting(id_shooting);
     }
+
+    @Override
+    public Customer addCustomer(Customer customer) {
+        return shootingDao.addCustomer(customer);
+    }
+
+    @Override
+    public Event addEvent(Event event) {
+        return shootingDao.addEvent(event);
+    }
+
+    @Override
+    public Shooting addShooting(Shooting shooting) {
+        return shootingDao.addShooting(shooting);
+    }
+
+    @Override
+    public Contract addContract(Contract contract) {
+        return shootingDao.addContract(contract);
+    }
+
+    @Override
+    public void addShootingGroup(int id_shooting, List<Employee> employees) {
+        shootingDao.addShootingGroup(id_shooting,employees);
+    }
 }

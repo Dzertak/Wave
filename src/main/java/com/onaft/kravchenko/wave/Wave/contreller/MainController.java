@@ -103,4 +103,39 @@ public class MainController {
     public List<Employee> employeesByIdShooting(@RequestParam("id_shooting") int id_shooting){
         return shootingService.findEmployeeByShooting(id_shooting);
     }
+
+    @RequestMapping(value = "/addCustomer",
+            method = RequestMethod.POST,
+            produces = "application/json")
+    public Customer addCustomer(@RequestBody Customer customer){
+        return shootingService.addCustomer(customer);
+    }
+
+    @RequestMapping(value = "/addEvent",
+            method = RequestMethod.POST,
+            produces = "application/json")
+    public Event addEvent(@RequestBody Event event){
+        return shootingService.addEvent(event);
+    }
+
+    @RequestMapping(value = "/addShooting",
+            method = RequestMethod.POST,
+            produces = "application/json")
+    public Shooting addShooting(@RequestBody Shooting shooting){
+        return shootingService.addShooting(shooting);
+    }
+
+    @RequestMapping(value = "/addShootingGroup",
+            method = RequestMethod.POST,
+            produces = "application/json")
+    public void addShootingGroup(@RequestParam("id_shooting") int id_shooting, @RequestBody List<Employee> employees){
+        shootingService.addShootingGroup(id_shooting,employees);
+    }
+
+    @RequestMapping(value = "/addContract",
+            method = RequestMethod.POST,
+            produces = "application/json")
+    public Contract addContract(@RequestBody Contract contract){
+        return shootingService.addContract(contract);
+    }
 }

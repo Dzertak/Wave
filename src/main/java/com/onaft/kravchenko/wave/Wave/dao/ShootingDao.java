@@ -15,5 +15,10 @@ public interface ShootingDao {
     Contract findContractByShooting(int id_shooting);
     Shooting findShootingByShooting(int id_shooting);
     List<Employee> findEmployeeByShooting(int id_shooting);
+    Customer addCustomer(Customer customer);
+    Event addEvent(Event event);
+    Shooting addShooting(Shooting shooting);
+    Contract addContract(Contract contract);
+    void addShootingGroup(int id_shooting, List<Employee> employees);
 
 }

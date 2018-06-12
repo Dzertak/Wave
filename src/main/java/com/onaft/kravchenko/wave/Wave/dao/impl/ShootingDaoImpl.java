@@ -7,12 +7,17 @@ import com.onaft.kravchenko.wave.Wave.util.EventRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -102,7 +107,7 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
                         customer1.setId_customer(resultSet.getInt(1));
                         customer1.setName(resultSet.getString(2));
                         customer1.setPhone(resultSet.getString(4));
-                        customer1.setAdress(resultSet.getString(3));
+                        customer1.setAddress(resultSet.getString(3));
 
                         return customer1;
                     }
@@ -159,6 +164,110 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
                 "\twhere s.id_shooting = 1 and sg.id_shooting = s.id_shooting and e.id_employee = sg.id_employee;";
         List<Employee> employees = getJdbcTemplate().query(sql, new BeanPropertyRowMapper(Employee.class));
         return employees;
+    }
+
+    @Override
+    public Customer addCustomer(Customer customer) {
+
+        final String INSERT_SQL = "INSERT INTO customers " +
+        "(name, phone, address) VALUES (?, ?, ?)";
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        getJdbcTemplate().update(
+                new PreparedStatementCreator() {
+                    public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+                        PreparedStatement ps =
+                                connection.prepareStatement(INSERT_SQL, new String[] {"id_customer"});
+                        ps.setString(1, customer.getName());
+                        ps.setString(2, customer.getPhone());
+                        ps.setString(3, customer.getAddress());
+                        return ps;
+                    }
+                },
+                keyHolder);
+        customer.setId_customer(keyHolder.getKey().intValue());
+        return customer;
+    }
+
+    @Override
+    public Event addEvent(Event event) {
+        String sql = "INSERT INTO evevts " +
+                "(description, name, address, id_customer) VALUES (?, ?, ?, ?)" ;
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        getJdbcTemplate().update(
+                new PreparedStatementCreator() {
+                    public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+                        PreparedStatement ps =
+                                connection.prepareStatement(sql, new String[] {"id_event"});
+                        ps.setString(1, event.getDescription());
+                        ps.setString(2, event.getName());
+                        ps.setString(3, event.getAddress());
+                        ps.setInt(4, event.getId_customer());
+                        return ps;
+                    }
+                },
+                keyHolder);
+        event.setId_event(keyHolder.getKey().intValue());
+        return event;
+    }
+
+    @Override
+    public Shooting addShooting(Shooting shooting) {
+        String sql = "INSERT INTO shooting " +
+                "(id_type_shooting, purpose, date_start, date_end) VALUES (?, ?, ?, ?)" ;
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        getJdbcTemplate().update(
+                new PreparedStatementCreator() {
+                    public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+                        PreparedStatement ps =
+                                connection.prepareStatement(sql, new String[] {"id_shooting"});
+                        ps.setInt(1, shooting.getTypeShooting().getId_type_shooting());
+                        ps.setString(2, shooting.getPurpose());
+                        ps.setTimestamp(3, shooting.getDate_start());
+                        ps.setTimestamp(4, shooting.getDate_end());
+                        return ps;
+                    }
+                },
+                keyHolder);
+        shooting.setId_shooting(keyHolder.getKey().intValue());
+        return shooting;
+    }
+
+    @Override
+    public Contract addContract(Contract contract) {
+        String sql = "INSERT INTO contracts " +
+                "(id_event,id_shooting) VALUES (?, ?)" ;
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        getJdbcTemplate().update(
+                new PreparedStatementCreator() {
+                    public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+                        PreparedStatement ps =
+                                connection.prepareStatement(sql, new String[] {"id_contract"});
+                        ps.setInt(1, contract.getId_event());
+                        ps.setInt(2, contract.getId_shooting());
+                        return ps;
+                    }
+                },
+                keyHolder);
+        contract.setId_contract(keyHolder.getKey().intValue());
+        return contract;
+    }
+
+    @Override
+    public void addShootingGroup(int id_shooting, List<Employee> employees) {
+        String sql = "INSERT INTO shooting_groups " +
+                "(id_shooting, id_employee) VALUES (?, ?)";
+        for (int i=0; i<3; i++){
+            getJdbcTemplate().update(sql, new Object[]{
+                    id_shooting, employees.get(1).getId_employee()
+            });
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+
     }
 
 

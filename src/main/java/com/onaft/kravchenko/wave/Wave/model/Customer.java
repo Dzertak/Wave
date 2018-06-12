@@ -4,14 +4,14 @@ public class Customer {
     private int id_customer;
     private String name;
     private String phone;
-    private String adress;
+    private String address;
 
     public Customer(){}
-    public Customer(int id_customer, String name, String phone, String adress) {
+    public Customer(int id_customer, String name, String phone, String address) {
         this.id_customer = id_customer;
         this.name = name;
         this.phone = phone;
-        this.adress = adress;
+        this.address = address;
     }
 
     public int getId_customer() {
@@ -38,11 +38,11 @@ public class Customer {
         this.phone = phone;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
