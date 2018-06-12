@@ -190,7 +190,7 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     @Override
     public Event addEvent(Event event) {
-        String sql = "INSERT INTO evevts " +
+        String sql = "INSERT INTO events " +
                 "(description, name, address, id_customer) VALUES (?, ?, ?, ?)" ;
         KeyHolder keyHolder = new GeneratedKeyHolder();
         getJdbcTemplate().update(
