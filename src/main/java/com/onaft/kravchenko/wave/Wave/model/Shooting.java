@@ -10,9 +10,9 @@ public class Shooting implements Serializable {
     private int id_shooting;
     private TypeShooting typeShooting;
     private String purpose;
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss.SSS")
+   // @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss.SSS")
     private Timestamp date_start;
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss.SSS")
+    //@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss.SSS")
     private Timestamp date_end;
 
     public Shooting() {
