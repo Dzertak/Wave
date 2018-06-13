@@ -50,15 +50,6 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
         return events;
     }
 
-    @Override
-    public String findShootingFullInfo(String id_employee) {
-        String sql = "SELECT even.id_event, even.name, even.description, even.date_start, even.date_end, even.address\n" +
-                "FROM public.events even, public.contracts con, public.shooting sh, public.shooting_groups shg\n" +
-                "Where CURRENT_DATE < even.date_start and\n" +
-                "(shg.id_employee = "+id_employee+" and shg.id_shooting = sh.id_shooting and \n" +
-                " sh.id_shooting = con.id_shooting and con.id_event = even.id_event)";
-        return null;
-    }
 
     @Override
     public List<Event> findShootingAll() {
@@ -69,6 +60,14 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
                 "Where CURRENT_DATE < sh.date_start and\n" +
                 " (tsh.id_type_shooting=sh.id_type_shooting and sh.id_shooting = con.id_shooting and con.id_event = even.id_event)";
         List<Event> events = getJdbcTemplate().query(sql, new EventRowMapper());
+        return events;
+    }
+
+    @Override
+    public List<Event> findEvents() {
+        String sql = "SELECT even.description, even.id_event, even.name, even.address, even.id_customer \n" +
+                "FROM public.events even";
+                List<Event> events = getJdbcTemplate().query(sql, new BeanPropertyRowMapper(Event.class));
         return events;
     }
 

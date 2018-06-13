@@ -55,6 +55,13 @@ public class MainController {
         return shootingService.findShootingAll();
     }
 
+    @RequestMapping(value = "/findEvents",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public List<Event> findEvents(){
+        return shootingService.findEvents();
+    }
+
     @RequestMapping(value = "/typeShootingAll",
             method = RequestMethod.GET,
             produces = "application/json")

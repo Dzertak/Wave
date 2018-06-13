@@ -76,28 +76,30 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="142" column="42" lean-forward="true" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+            <state relative-caret-position="235">
+              <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#809#810#0" expanded="true" />
                 <element signature="e#846#847#0" expanded="true" />
                 <element signature="e#1860#1861#0" expanded="true" />
                 <element signature="e#1916#1917#0" expanded="true" />
-                <element signature="e#2101#2102#0" expanded="true" />
-                <element signature="e#2161#2162#0" expanded="true" />
-                <element signature="e#2332#2333#0" expanded="true" />
-                <element signature="e#2388#2389#0" expanded="true" />
-                <element signature="e#2559#2560#0" expanded="true" />
-                <element signature="e#2615#2616#0" expanded="true" />
-                <element signature="e#4013#4014#0" expanded="true" />
-                <element signature="e#4073#4074#0" expanded="true" />
-                <element signature="e#4252#4253#0" expanded="true" />
-                <element signature="e#4306#4307#0" expanded="true" />
-                <element signature="e#4500#4501#0" expanded="true" />
-                <element signature="e#4560#4561#0" expanded="true" />
-                <element signature="e#5078#5079#0" expanded="true" />
-                <element signature="e#5138#5139#0" expanded="true" />
+                <element signature="e#2080#2081#0" expanded="true" />
+                <element signature="e#2131#2132#0" expanded="true" />
+                <element signature="e#2316#2317#0" expanded="true" />
+                <element signature="e#2376#2377#0" expanded="true" />
+                <element signature="e#2547#2548#0" expanded="true" />
+                <element signature="e#2603#2604#0" expanded="true" />
+                <element signature="e#2774#2775#0" expanded="true" />
+                <element signature="e#2830#2831#0" expanded="true" />
+                <element signature="e#4228#4229#0" expanded="true" />
+                <element signature="e#4288#4289#0" expanded="true" />
+                <element signature="e#4467#4468#0" expanded="true" />
+                <element signature="e#4521#4522#0" expanded="true" />
+                <element signature="e#4715#4716#0" expanded="true" />
+                <element signature="e#4775#4776#0" expanded="true" />
+                <element signature="e#5293#5294#0" expanded="true" />
+                <element signature="e#5353#5354#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,8 +108,8 @@
       <file leaf-file-name="ShootingDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/ShootingDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="68">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -116,35 +118,38 @@
       <file leaf-file-name="ShootingDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="279" column="5" lean-forward="true" selection-start-line="279" selection-start-column="5" selection-end-line="279" selection-end-column="5" />
+            <state relative-caret-position="31">
+              <caret line="67" column="104" lean-forward="false" selection-start-line="67" selection-start-column="104" selection-end-line="67" selection-end-column="104" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1307#1308#0" expanded="true" />
                 <element signature="e#1348#1349#0" expanded="true" />
-                <marker date="1528885619928" expanded="true" signature="1445:1457" ph="SELECT even.... events" />
-                <marker date="1528885619928" expanded="true" signature="1445:2118" ph="SELECT even.... events" />
-                <marker date="1528885619928" expanded="true" signature="2902:3448" ph="SELECT even.... events" />
-                <marker date="1528885619928" expanded="true" signature="3652:3659" ph="SELECT even.... events" />
-                <marker date="1528885619928" expanded="true" signature="3652:3673" ph="SELECT * FRO... types_s" />
-                <marker date="1528885619928" expanded="true" signature="3652:3680" ph="SELECT * FRO... types_shooting" />
-                <marker date="1528885619928" expanded="true" signature="3922:3966" ph="SELECT * FRO... employees" />
-                <marker date="1528885619928" expanded="true" signature="4192:4215" ph="SELECT * FRO... customers" />
-                <marker date="1528885619928" expanded="true" signature="4457:4681" ph="SELECT c.id_... customers" />
-                <marker date="1528885619928" expanded="true" signature="4457:4738" ph="SELECT c.id_... customers" />
-                <marker date="1528885619928" expanded="true" signature="4457:4746" ph="SELECT cus.i... customers" />
-                <marker date="1528885619928" expanded="true" signature="5552:5684" ph="SELECT cid_c... contracts" />
-                <marker date="1528885619928" expanded="true" signature="6454:6592" ph="SELECT id_sh... shooting" />
-                <marker date="1528885619928" expanded="true" signature="6454:6620" ph="SELECT id_sh... shooting" />
-                <marker date="1528885619928" expanded="true" signature="6454:6621" ph="SELECT id_sh... shooting" />
-                <marker date="1528885619928" expanded="true" signature="6454:6713" ph="SELECT id_sh... shooting" />
-                <marker date="1528885619928" expanded="true" signature="7676:8006" ph="SELECT e.id_... employees" />
-                <marker date="1528885619928" expanded="true" signature="8254:8328" ph="INSERT INTO customers... " />
-                <marker date="1528885619928" expanded="true" signature="9198:9299" ph="INSERT INTO evevts... " />
-                <marker date="1528885619928" expanded="true" signature="10222:10333" ph="INSERT INTO shooting... " />
-                <marker date="1528885619928" expanded="true" signature="11312:11391" ph="INSERT INTO contracts... " />
-                <marker date="1528885619928" expanded="true" signature="12232:12321" ph="INSERT INTO shooting_groups... " />
-                <marker date="1528885619928" expanded="true" signature="12757:12799" ph="DELETE FROM shooting... " />
+                <marker date="1528887633646" expanded="true" signature="1445:1457" ph="SELECT even.... events" />
+                <marker date="1528887633646" expanded="true" signature="1445:2118" ph="SELECT even.... events" />
+                <marker date="1528887633646" expanded="true" signature="2312:2858" ph="SELECT even.... events" />
+                <marker date="1528887633646" expanded="true" signature="3046:3173" ph="SELECT even.... events" />
+                <marker date="1528887633646" expanded="true" signature="3046:3174" ph="SELECT even.... events" />
+                <marker date="1528887633646" expanded="true" signature="3046:3192" ph="SELECT even.... events" />
+                <marker date="1528887633646" expanded="true" signature="3404:3411" ph="SELECT even.... events" />
+                <marker date="1528887633646" expanded="true" signature="3404:3425" ph="SELECT * FRO... types_s" />
+                <marker date="1528887633646" expanded="true" signature="3404:3432" ph="SELECT * FRO... types_shooting" />
+                <marker date="1528887633646" expanded="true" signature="3674:3718" ph="SELECT * FRO... employees" />
+                <marker date="1528887633646" expanded="true" signature="3944:3967" ph="SELECT * FRO... customers" />
+                <marker date="1528887633646" expanded="true" signature="4209:4433" ph="SELECT c.id_... customers" />
+                <marker date="1528887633646" expanded="true" signature="4209:4490" ph="SELECT c.id_... customers" />
+                <marker date="1528887633646" expanded="true" signature="4209:4498" ph="SELECT cus.i... customers" />
+                <marker date="1528887633646" expanded="true" signature="5304:5436" ph="SELECT cid_c... contracts" />
+                <marker date="1528887633646" expanded="true" signature="6206:6344" ph="SELECT id_sh... shooting" />
+                <marker date="1528887633646" expanded="true" signature="6206:6372" ph="SELECT id_sh... shooting" />
+                <marker date="1528887633646" expanded="true" signature="6206:6373" ph="SELECT id_sh... shooting" />
+                <marker date="1528887633646" expanded="true" signature="6206:6465" ph="SELECT id_sh... shooting" />
+                <marker date="1528887633646" expanded="true" signature="7428:7758" ph="SELECT e.id_... employees" />
+                <marker date="1528887633646" expanded="true" signature="8006:8080" ph="INSERT INTO customers... " />
+                <marker date="1528887633646" expanded="true" signature="8950:9051" ph="INSERT INTO evevts... " />
+                <marker date="1528887633646" expanded="true" signature="9974:10085" ph="INSERT INTO shooting... " />
+                <marker date="1528887633646" expanded="true" signature="11064:11143" ph="INSERT INTO contracts... " />
+                <marker date="1528887633646" expanded="true" signature="11984:12073" ph="INSERT INTO shooting_groups... " />
+                <marker date="1528887633646" expanded="true" signature="12509:12551" ph="DELETE FROM shooting... " />
               </folding>
             </state>
           </provider>
@@ -153,8 +158,8 @@
       <file leaf-file-name="ShootingService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/ShootingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            <state relative-caret-position="119">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -163,36 +168,38 @@
       <file leaf-file-name="ShootingServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/impl/ShootingServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#541#542#0" expanded="true" />
                 <element signature="e#601#602#0" expanded="true" />
                 <element signature="e#659#660#0" expanded="true" />
                 <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#836#837#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1356#1357#0" expanded="true" />
-                <element signature="e#1433#1434#0" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#1724#1725#0" expanded="true" />
-                <element signature="e#1780#1781#0" expanded="true" />
-                <element signature="e#1836#1837#0" expanded="true" />
-                <element signature="e#1886#1887#0" expanded="true" />
-                <element signature="e#1954#1955#0" expanded="true" />
-                <element signature="e#2010#2011#0" expanded="true" />
-                <element signature="e#2078#2079#0" expanded="true" />
-                <element signature="e#2134#2135#0" expanded="true" />
-                <element signature="e#2364#2365#0" expanded="true" />
-                <element signature="e#2426#2427#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+                <element signature="e#1110#1111#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1239#1240#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+                <element signature="e#1386#1387#0" expanded="true" />
+                <element signature="e#1456#1457#0" expanded="true" />
+                <element signature="e#1533#1534#0" expanded="true" />
+                <element signature="e#1603#1604#0" expanded="true" />
+                <element signature="e#1824#1825#0" expanded="true" />
+                <element signature="e#1880#1881#0" expanded="true" />
+                <element signature="e#1936#1937#0" expanded="true" />
+                <element signature="e#1986#1987#0" expanded="true" />
+                <element signature="e#2054#2055#0" expanded="true" />
+                <element signature="e#2110#2111#0" expanded="true" />
+                <element signature="e#2178#2179#0" expanded="true" />
+                <element signature="e#2234#2235#0" expanded="true" />
+                <element signature="e#2464#2465#0" expanded="true" />
+                <element signature="e#2526#2527#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -349,10 +356,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/util/EventRowMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/ShootingDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/ShootingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/impl/ShootingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -653,7 +660,7 @@
       <workItem from="1526204535956" duration="9406000" />
       <workItem from="1527351426994" duration="19414000" />
       <workItem from="1528301169437" duration="20491000" />
-      <workItem from="1528535438554" duration="23939000" />
+      <workItem from="1528535438554" duration="25454000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1522583449690</created>
@@ -753,11 +760,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528822595864</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add method delete shooting">
+      <created>1528885779507</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1528885779507</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81663000" />
+    <option name="totallyTimeSpent" value="83178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -817,7 +831,9 @@
     <MESSAGE value="change structure model and update sql" />
     <MESSAGE value="add methods for insert new shooting" />
     <MESSAGE value="fix add event" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix add event" />
+    <MESSAGE value="add method delete shooting" />
+    <MESSAGE value="add method get all events for spinner" />
+    <option name="LAST_COMMIT_MESSAGE" value="add method get all events for spinner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -836,20 +852,22 @@
             <element signature="e#846#847#0" expanded="true" />
             <element signature="e#1860#1861#0" expanded="true" />
             <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#2101#2102#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#4073#4074#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
-            <element signature="e#4306#4307#0" expanded="true" />
-            <element signature="e#4500#4501#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5138#5139#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2547#2548#0" expanded="true" />
+            <element signature="e#2603#2604#0" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#4228#4229#0" expanded="true" />
+            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#4467#4468#0" expanded="true" />
+            <element signature="e#4521#4522#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4775#4776#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
+            <element signature="e#5353#5354#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -922,20 +940,22 @@
             <element signature="e#846#847#0" expanded="true" />
             <element signature="e#1860#1861#0" expanded="true" />
             <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#2101#2102#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#4073#4074#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
-            <element signature="e#4306#4307#0" expanded="true" />
-            <element signature="e#4500#4501#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5138#5139#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2547#2548#0" expanded="true" />
+            <element signature="e#2603#2604#0" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#4228#4229#0" expanded="true" />
+            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#4467#4468#0" expanded="true" />
+            <element signature="e#4521#4522#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4775#4776#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
+            <element signature="e#5353#5354#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1008,20 +1028,22 @@
             <element signature="e#846#847#0" expanded="true" />
             <element signature="e#1860#1861#0" expanded="true" />
             <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#2101#2102#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#4073#4074#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
-            <element signature="e#4306#4307#0" expanded="true" />
-            <element signature="e#4500#4501#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5138#5139#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2547#2548#0" expanded="true" />
+            <element signature="e#2603#2604#0" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#4228#4229#0" expanded="true" />
+            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#4467#4468#0" expanded="true" />
+            <element signature="e#4521#4522#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4775#4776#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
+            <element signature="e#5353#5354#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1079,20 +1101,22 @@
             <element signature="e#846#847#0" expanded="true" />
             <element signature="e#1860#1861#0" expanded="true" />
             <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#2101#2102#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#4073#4074#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
-            <element signature="e#4306#4307#0" expanded="true" />
-            <element signature="e#4500#4501#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5138#5139#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2547#2548#0" expanded="true" />
+            <element signature="e#2603#2604#0" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#4228#4229#0" expanded="true" />
+            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#4467#4468#0" expanded="true" />
+            <element signature="e#4521#4522#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4775#4776#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
+            <element signature="e#5353#5354#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1447,115 +1471,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/ShootingDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="68">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/ShootingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="119">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/impl/ShootingServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#541#542#0" expanded="true" />
             <element signature="e#601#602#0" expanded="true" />
             <element signature="e#659#660#0" expanded="true" />
             <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
-            <element signature="e#1780#1781#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#1954#1955#0" expanded="true" />
-            <element signature="e#2010#2011#0" expanded="true" />
-            <element signature="e#2078#2079#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#2364#2365#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1456#1457#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1603#1604#0" expanded="true" />
+            <element signature="e#1824#1825#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
+            <element signature="e#1936#1937#0" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#2178#2179#0" expanded="true" />
+            <element signature="e#2234#2235#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2526#2527#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="142" column="42" lean-forward="true" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+        <state relative-caret-position="235">
+          <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#809#810#0" expanded="true" />
             <element signature="e#846#847#0" expanded="true" />
             <element signature="e#1860#1861#0" expanded="true" />
             <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#2101#2102#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#4073#4074#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
-            <element signature="e#4306#4307#0" expanded="true" />
-            <element signature="e#4500#4501#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-            <element signature="e#5138#5139#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2547#2548#0" expanded="true" />
+            <element signature="e#2603#2604#0" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#4228#4229#0" expanded="true" />
+            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#4467#4468#0" expanded="true" />
+            <element signature="e#4521#4522#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4775#4776#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
+            <element signature="e#5353#5354#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="279" column="5" lean-forward="true" selection-start-line="279" selection-start-column="5" selection-end-line="279" selection-end-column="5" />
+        <state relative-caret-position="31">
+          <caret line="67" column="104" lean-forward="false" selection-start-line="67" selection-start-column="104" selection-end-line="67" selection-end-column="104" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1307#1308#0" expanded="true" />
             <element signature="e#1348#1349#0" expanded="true" />
-            <marker date="1528885619928" expanded="true" signature="1445:1457" ph="SELECT even.... events" />
-            <marker date="1528885619928" expanded="true" signature="1445:2118" ph="SELECT even.... events" />
-            <marker date="1528885619928" expanded="true" signature="2902:3448" ph="SELECT even.... events" />
-            <marker date="1528885619928" expanded="true" signature="3652:3659" ph="SELECT even.... events" />
-            <marker date="1528885619928" expanded="true" signature="3652:3673" ph="SELECT * FRO... types_s" />
-            <marker date="1528885619928" expanded="true" signature="3652:3680" ph="SELECT * FRO... types_shooting" />
-            <marker date="1528885619928" expanded="true" signature="3922:3966" ph="SELECT * FRO... employees" />
-            <marker date="1528885619928" expanded="true" signature="4192:4215" ph="SELECT * FRO... customers" />
-            <marker date="1528885619928" expanded="true" signature="4457:4681" ph="SELECT c.id_... customers" />
-            <marker date="1528885619928" expanded="true" signature="4457:4738" ph="SELECT c.id_... customers" />
-            <marker date="1528885619928" expanded="true" signature="4457:4746" ph="SELECT cus.i... customers" />
-            <marker date="1528885619928" expanded="true" signature="5552:5684" ph="SELECT cid_c... contracts" />
-            <marker date="1528885619928" expanded="true" signature="6454:6592" ph="SELECT id_sh... shooting" />
-            <marker date="1528885619928" expanded="true" signature="6454:6620" ph="SELECT id_sh... shooting" />
-            <marker date="1528885619928" expanded="true" signature="6454:6621" ph="SELECT id_sh... shooting" />
-            <marker date="1528885619928" expanded="true" signature="6454:6713" ph="SELECT id_sh... shooting" />
-            <marker date="1528885619928" expanded="true" signature="7676:8006" ph="SELECT e.id_... employees" />
-            <marker date="1528885619928" expanded="true" signature="8254:8328" ph="INSERT INTO customers... " />
-            <marker date="1528885619928" expanded="true" signature="9198:9299" ph="INSERT INTO evevts... " />
-            <marker date="1528885619928" expanded="true" signature="10222:10333" ph="INSERT INTO shooting... " />
-            <marker date="1528885619928" expanded="true" signature="11312:11391" ph="INSERT INTO contracts... " />
-            <marker date="1528885619928" expanded="true" signature="12232:12321" ph="INSERT INTO shooting_groups... " />
-            <marker date="1528885619928" expanded="true" signature="12757:12799" ph="DELETE FROM shooting... " />
+            <marker date="1528887633646" expanded="true" signature="1445:1457" ph="SELECT even.... events" />
+            <marker date="1528887633646" expanded="true" signature="1445:2118" ph="SELECT even.... events" />
+            <marker date="1528887633646" expanded="true" signature="2312:2858" ph="SELECT even.... events" />
+            <marker date="1528887633646" expanded="true" signature="3046:3173" ph="SELECT even.... events" />
+            <marker date="1528887633646" expanded="true" signature="3046:3174" ph="SELECT even.... events" />
+            <marker date="1528887633646" expanded="true" signature="3046:3192" ph="SELECT even.... events" />
+            <marker date="1528887633646" expanded="true" signature="3404:3411" ph="SELECT even.... events" />
+            <marker date="1528887633646" expanded="true" signature="3404:3425" ph="SELECT * FRO... types_s" />
+            <marker date="1528887633646" expanded="true" signature="3404:3432" ph="SELECT * FRO... types_shooting" />
+            <marker date="1528887633646" expanded="true" signature="3674:3718" ph="SELECT * FRO... employees" />
+            <marker date="1528887633646" expanded="true" signature="3944:3967" ph="SELECT * FRO... customers" />
+            <marker date="1528887633646" expanded="true" signature="4209:4433" ph="SELECT c.id_... customers" />
+            <marker date="1528887633646" expanded="true" signature="4209:4490" ph="SELECT c.id_... customers" />
+            <marker date="1528887633646" expanded="true" signature="4209:4498" ph="SELECT cus.i... customers" />
+            <marker date="1528887633646" expanded="true" signature="5304:5436" ph="SELECT cid_c... contracts" />
+            <marker date="1528887633646" expanded="true" signature="6206:6344" ph="SELECT id_sh... shooting" />
+            <marker date="1528887633646" expanded="true" signature="6206:6372" ph="SELECT id_sh... shooting" />
+            <marker date="1528887633646" expanded="true" signature="6206:6373" ph="SELECT id_sh... shooting" />
+            <marker date="1528887633646" expanded="true" signature="6206:6465" ph="SELECT id_sh... shooting" />
+            <marker date="1528887633646" expanded="true" signature="7428:7758" ph="SELECT e.id_... employees" />
+            <marker date="1528887633646" expanded="true" signature="8006:8080" ph="INSERT INTO customers... " />
+            <marker date="1528887633646" expanded="true" signature="8950:9051" ph="INSERT INTO evevts... " />
+            <marker date="1528887633646" expanded="true" signature="9974:10085" ph="INSERT INTO shooting... " />
+            <marker date="1528887633646" expanded="true" signature="11064:11143" ph="INSERT INTO contracts... " />
+            <marker date="1528887633646" expanded="true" signature="11984:12073" ph="INSERT INTO shooting_groups... " />
+            <marker date="1528887633646" expanded="true" signature="12509:12551" ph="DELETE FROM shooting... " />
           </folding>
         </state>
       </provider>
