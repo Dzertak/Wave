@@ -1,5 +1,7 @@
 package com.onaft.kravchenko.wave.Wave.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Date;
@@ -8,7 +10,9 @@ public class Shooting implements Serializable {
     private int id_shooting;
     private TypeShooting typeShooting;
     private String purpose;
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss.SSS")
     private Timestamp date_start;
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss.SSS")
     private Timestamp date_end;
 
     public Shooting() {

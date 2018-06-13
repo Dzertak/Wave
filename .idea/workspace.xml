@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f375916-6cda-4b55-9bb4-9487bcdc8679" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/ShootingDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/ShootingDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/ShootingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/ShootingService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/impl/ShootingServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/impl/ShootingServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Shooting.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Shooting.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,8 +72,8 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+            <state relative-caret-position="167">
+              <caret line="135" column="24" lean-forward="false" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#809#810#0" expanded="true" />
@@ -115,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShootingDaoImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShootingDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="67" column="104" lean-forward="false" selection-start-line="67" selection-start-column="104" selection-end-line="67" selection-end-column="104" />
+            <state relative-caret-position="150">
+              <caret line="215" column="55" lean-forward="true" selection-start-line="215" selection-start-column="55" selection-end-line="215" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1307#1308#0" expanded="true" />
@@ -280,25 +276,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shooting.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shooting.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Shooting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="53" column="37" lean-forward="true" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+            <state relative-caret-position="235">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
-                <element signature="e#1039#1040#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-                <element signature="e#1260#1261#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#1359#1360#0" expanded="true" />
-                <element signature="e#1397#1398#0" expanded="true" />
-                <element signature="e#1428#1429#0" expanded="true" />
-                <element signature="e#1479#1480#0" expanded="true" />
-                <element signature="e#1519#1520#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+                <element signature="e#1084#1085#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1415#1416#0" expanded="true" />
+                <element signature="e#1470#1471#0" expanded="true" />
+                <element signature="e#1514#1515#0" expanded="true" />
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1583#1584#0" expanded="true" />
+                <element signature="e#1634#1635#0" expanded="true" />
+                <element signature="e#1674#1675#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -351,7 +347,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Contract.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Event.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Shooting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/util/EventMapRower.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/util/EventRowMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Customer.java" />
@@ -360,6 +355,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/impl/ShootingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Shooting.java" />
       </list>
     </option>
   </component>
@@ -660,7 +656,7 @@
       <workItem from="1526204535956" duration="9406000" />
       <workItem from="1527351426994" duration="19414000" />
       <workItem from="1528301169437" duration="20491000" />
-      <workItem from="1528535438554" duration="25454000" />
+      <workItem from="1528535438554" duration="27410000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1522583449690</created>
@@ -767,11 +763,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528885779507</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add method get all events for spinner">
+      <created>1528887756532</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1528887756545</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83178000" />
+    <option name="totallyTimeSpent" value="85134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1413,28 +1416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Shooting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="53" column="37" lean-forward="true" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1523,40 +1504,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-            <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#2080#2081#0" expanded="true" />
-            <element signature="e#2131#2132#0" expanded="true" />
-            <element signature="e#2316#2317#0" expanded="true" />
-            <element signature="e#2376#2377#0" expanded="true" />
-            <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#2603#2604#0" expanded="true" />
-            <element signature="e#2774#2775#0" expanded="true" />
-            <element signature="e#2830#2831#0" expanded="true" />
-            <element signature="e#4228#4229#0" expanded="true" />
-            <element signature="e#4288#4289#0" expanded="true" />
-            <element signature="e#4467#4468#0" expanded="true" />
-            <element signature="e#4521#4522#0" expanded="true" />
-            <element signature="e#4715#4716#0" expanded="true" />
-            <element signature="e#4775#4776#0" expanded="true" />
-            <element signature="e#5293#5294#0" expanded="true" />
-            <element signature="e#5353#5354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="67" column="104" lean-forward="false" selection-start-line="67" selection-start-column="104" selection-end-line="67" selection-end-column="104" />
+        <state relative-caret-position="150">
+          <caret line="215" column="55" lean-forward="true" selection-start-line="215" selection-start-column="55" selection-end-line="215" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1307#1308#0" expanded="true" />
@@ -1587,6 +1538,58 @@
             <marker date="1528887633646" expanded="true" signature="11064:11143" ph="INSERT INTO contracts... " />
             <marker date="1528887633646" expanded="true" signature="11984:12073" ph="INSERT INTO shooting_groups... " />
             <marker date="1528887633646" expanded="true" signature="12509:12551" ph="DELETE FROM shooting... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="135" column="24" lean-forward="false" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2547#2548#0" expanded="true" />
+            <element signature="e#2603#2604#0" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#4228#4229#0" expanded="true" />
+            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#4467#4468#0" expanded="true" />
+            <element signature="e#4521#4522#0" expanded="true" />
+            <element signature="e#4715#4716#0" expanded="true" />
+            <element signature="e#4775#4776#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
+            <element signature="e#5353#5354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Shooting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1674#1675#0" expanded="true" />
           </folding>
         </state>
       </provider>
