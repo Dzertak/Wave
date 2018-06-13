@@ -1,5 +1,8 @@
 package com.onaft.kravchenko.wave.Wave.contreller;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import com.onaft.kravchenko.wave.Wave.model.*;
 import com.onaft.kravchenko.wave.Wave.service.AccountService;
 import com.onaft.kravchenko.wave.Wave.service.impl.AccountServiceImpl;
@@ -7,6 +10,7 @@ import com.onaft.kravchenko.wave.Wave.service.impl.ShootingServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.lang.reflect.Type;
 import java.util.List;
 
 @RestController
@@ -128,8 +132,12 @@ public class MainController {
     @RequestMapping(value = "/addShooting",
             method = RequestMethod.POST,
             produces = "application/json")
-    public Shooting addShooting(@RequestBody Shooting shooting){
-        return shootingService.addShooting(shooting);
+    public Shooting addShooting(@RequestBody String shooting){
+        Type type = new TypeToken<Shooting>() {
+        }.getType();
+        Gson gson  = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.SSS").create();
+        Shooting shooting1 = gson.fromJson(shooting, type);
+        return shootingService.addShooting(shooting1);
     }
 
     @RequestMapping(value = "/addShootingGroup",
