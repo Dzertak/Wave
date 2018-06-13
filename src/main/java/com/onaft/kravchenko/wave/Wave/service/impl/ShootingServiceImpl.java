@@ -83,4 +83,9 @@ public class ShootingServiceImpl implements ShootingService {
     public void addShootingGroup(int id_shooting, List<Employee> employees) {
         shootingDao.addShootingGroup(id_shooting,employees);
     }
+
+    @Override
+    public String deleteShooting(String id_shooting) {
+        return shootingDao.deleteShooting(id_shooting);
+    }
 }

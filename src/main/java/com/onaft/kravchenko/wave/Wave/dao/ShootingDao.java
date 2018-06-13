@@ -20,5 +20,5 @@ public interface ShootingDao {
     Shooting addShooting(Shooting shooting);
     Contract addContract(Contract contract);
     void addShootingGroup(int id_shooting, List<Employee> employees);
-
+    String deleteShooting(String id_shooting);
 }

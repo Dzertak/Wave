@@ -270,5 +270,14 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     }
 
+    @Override
+    public String deleteShooting(String id_shooting) {
+        String sql = "DELETE FROM shooting WHERE id_shooting = ?";
+        int res =  getJdbcTemplate().update(sql, new Object[]{id_shooting});
+        if (res==1)
+            return "Done";
+        return "Error";
+    }
+
 
 }

@@ -138,4 +138,11 @@ public class MainController {
     public Contract addContract(@RequestBody Contract contract){
         return shootingService.addContract(contract);
     }
+
+    @RequestMapping(value = "/deleteShooting",
+            method = RequestMethod.DELETE,
+            produces = "application/json")
+    public String deleteShooting(@RequestParam("id_shooting") String id_shooting){
+        return shootingService.deleteShooting(id_shooting);
+    }
 }
