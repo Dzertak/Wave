@@ -6,6 +6,7 @@ import com.onaft.kravchenko.wave.Wave.service.ShootingService;
 import com.onaft.kravchenko.wave.Wave.util.EventRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
@@ -257,18 +258,20 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
     public void addShootingGroup(int id_shooting, List<Employee> employees) {
         String sql = "INSERT INTO shooting_groups " +
                 "(id_shooting, id_employee) VALUES (?, ?)";
-        for (int i=0; i<3; i++){
-            getJdbcTemplate().update(sql, new Object[]{
-                    id_shooting, employees.get(1).getId_employee()
-            });
-            try {
-                Thread.sleep(200);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+        getJdbcTemplate().batchUpdate(sql, new BatchPreparedStatementSetter() {
+
+            @Override
+            public void setValues(PreparedStatement ps, int i) throws SQLException {
+                int id_employee = employees.get(i).getId_employee();
+                ps.setLong(1, id_shooting);
+                ps.setInt(2, id_employee);
             }
-        }
 
-
+            @Override
+            public int getBatchSize() {
+                return employees.size();
+            }
+        });
     }
 
     @Override
