@@ -140,8 +140,8 @@ public class MainController {
     @RequestMapping(value = "/addShootingGroup",
             method = RequestMethod.POST,
             produces = "application/json")
-    public void addShootingGroup(@RequestBody ShootingGroupRequest groupRequest){
-        shootingService.addShootingGroup(groupRequest);
+    public String addShootingGroup(@RequestBody ShootingGroupRequest groupRequest){
+        return shootingService.addShootingGroup(groupRequest);
     }
 
     @RequestMapping(value = "/addContract",

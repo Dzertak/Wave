@@ -86,8 +86,8 @@ public class ShootingServiceImpl implements ShootingService {
     }
 
     @Override
-    public void addShootingGroup(ShootingGroupRequest groupRequest) {
-        shootingDao.addShootingGroup(groupRequest);
+    public String addShootingGroup(ShootingGroupRequest groupRequest) {
+        return shootingDao.addShootingGroup(groupRequest);
     }
 
     @Override

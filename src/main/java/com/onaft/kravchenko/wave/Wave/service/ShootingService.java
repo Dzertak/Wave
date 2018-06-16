@@ -20,6 +20,6 @@ public interface ShootingService {
     Event addEvent(Event event);
     Shooting addShooting(Shooting shooting);
     Contract addContract(Contract contract);
-    void addShootingGroup(ShootingGroupRequest groupRequest);
+    String addShootingGroup(ShootingGroupRequest groupRequest);
     String deleteShooting(String id_shooting);
 }
