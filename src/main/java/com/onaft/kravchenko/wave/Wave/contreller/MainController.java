@@ -7,6 +7,7 @@ import com.onaft.kravchenko.wave.Wave.model.*;
 import com.onaft.kravchenko.wave.Wave.service.AccountService;
 import com.onaft.kravchenko.wave.Wave.service.impl.AccountServiceImpl;
 import com.onaft.kravchenko.wave.Wave.service.impl.ShootingServiceImpl;
+import com.onaft.kravchenko.wave.Wave.util.ShootingGroupRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -139,8 +140,8 @@ public class MainController {
     @RequestMapping(value = "/addShootingGroup",
             method = RequestMethod.POST,
             produces = "application/json")
-    public void addShootingGroup(@RequestParam("id_shooting") int id_shooting, @RequestBody List<Employee> employees){
-        shootingService.addShootingGroup(id_shooting,employees);
+    public void addShootingGroup(@RequestBody ShootingGroupRequest groupRequest){
+        shootingService.addShootingGroup(groupRequest);
     }
 
     @RequestMapping(value = "/addContract",
