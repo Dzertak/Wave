@@ -4,6 +4,7 @@ import com.onaft.kravchenko.wave.Wave.dao.ShootingDao;
 import com.onaft.kravchenko.wave.Wave.model.*;
 import com.onaft.kravchenko.wave.Wave.service.ShootingService;
 import com.onaft.kravchenko.wave.Wave.util.EventRowMapper;
+import com.onaft.kravchenko.wave.Wave.util.ShootingGroupRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
@@ -255,23 +256,28 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
     }
 
     @Override
-    public void addShootingGroup(int id_shooting, List<Employee> employees) {
-        String sql = "INSERT INTO shooting_groups " +
-                "(id_shooting, id_employee) VALUES (?, ?)";
-        getJdbcTemplate().batchUpdate(sql, new BatchPreparedStatementSetter() {
+    public String addShootingGroup(ShootingGroupRequest groupRequest) {
+        try {
+            String sql = "INSERT INTO shooting_groups " +
+                    "(id_shooting, id_employee) VALUES (?, ?)";
+            getJdbcTemplate().batchUpdate(sql, new BatchPreparedStatementSetter() {
 
-            @Override
-            public void setValues(PreparedStatement ps, int i) throws SQLException {
-                int id_employee = employees.get(i).getId_employee();
-                ps.setLong(1, id_shooting);
-                ps.setInt(2, id_employee);
-            }
+                @Override
+                public void setValues(PreparedStatement ps, int i) throws SQLException {
+                    ps.setLong(1, groupRequest.getId_shooting());
+                    ps.setInt(2, groupRequest.getEmployees().get(i).getId_employee());
+                }
 
-            @Override
-            public int getBatchSize() {
-                return employees.size();
-            }
-        });
+                @Override
+                public int getBatchSize() {
+                    return groupRequest.getEmployees().size();
+                }
+            });
+            return "Done";
+        } catch (Exception e){
+            e.printStackTrace();
+            return "Error";
+        }
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.onaft.kravchenko.wave.Wave.service;
 
 import com.onaft.kravchenko.wave.Wave.model.*;
+import com.onaft.kravchenko.wave.Wave.util.ShootingGroupRequest;
 
 import java.util.List;
 
@@ -19,6 +20,6 @@ public interface ShootingService {
     Event addEvent(Event event);
     Shooting addShooting(Shooting shooting);
     Contract addContract(Contract contract);
-    void addShootingGroup(int id_shooting, List<Employee> employees);
+    void addShootingGroup(ShootingGroupRequest groupRequest);
     String deleteShooting(String id_shooting);
 }

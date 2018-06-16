@@ -3,6 +3,7 @@ package com.onaft.kravchenko.wave.Wave.service.impl;
 import com.onaft.kravchenko.wave.Wave.dao.ShootingDao;
 import com.onaft.kravchenko.wave.Wave.model.*;
 import com.onaft.kravchenko.wave.Wave.service.ShootingService;
+import com.onaft.kravchenko.wave.Wave.util.ShootingGroupRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -85,8 +86,8 @@ public class ShootingServiceImpl implements ShootingService {
     }
 
     @Override
-    public void addShootingGroup(int id_shooting, List<Employee> employees) {
-        shootingDao.addShootingGroup(id_shooting,employees);
+    public void addShootingGroup(ShootingGroupRequest groupRequest) {
+        shootingDao.addShootingGroup(groupRequest);
     }
 
     @Override
