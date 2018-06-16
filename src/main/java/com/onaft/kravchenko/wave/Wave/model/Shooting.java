@@ -16,19 +16,19 @@ public class Shooting implements Serializable {
     private String purpose;
    // @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss.SSS")
    // @JsonFormat(pattern="MMM dd, yyyy HH:mm:ss")
-   @JsonSerialize(using = TimestampSerializer.class)
-   @JsonDeserialize(using = TimestampDeserializer.class)
-    private Timestamp date_start;
+  // @JsonSerialize(using = TimestampSerializer.class)
+   //@JsonDeserialize(using = TimestampDeserializer.class)
+    private String date_start;
     //@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss.SSS")
     //@JsonFormat(pattern="MMM dd, yyyy HH:mm:ss")
-    @JsonSerialize(using = TimestampSerializer.class)
-    @JsonDeserialize(using = TimestampDeserializer.class)
-    private Timestamp date_end;
+    //@JsonSerialize(using = TimestampSerializer.class)
+    //@JsonDeserialize(using = TimestampDeserializer.class)
+    private String date_end;
 
     public Shooting() {
     }
 
-    public Shooting(int id_shooting, TypeShooting typeShooting, String purpose, Timestamp date_start, Timestamp date_end) {
+    public Shooting(int id_shooting, TypeShooting typeShooting, String purpose, String date_start, String date_end) {
         this.id_shooting = id_shooting;
         this.typeShooting = typeShooting;
         this.purpose = purpose;
@@ -60,19 +60,19 @@ public class Shooting implements Serializable {
         this.purpose = purpose;
     }
 
-    public Timestamp getDate_start() {
+    public String getDate_start() {
         return date_start;
     }
 
-    public void setDate_start(Timestamp date_start) {
+    public void setDate_start(String date_start) {
         this.date_start = date_start;
     }
 
-    public Timestamp getDate_end() {
+    public String getDate_end() {
         return date_end;
     }
 
-    public void setDate_end(Timestamp date_end) {
+    public void setDate_end(String date_end) {
         this.date_end = date_end;
     }
 }

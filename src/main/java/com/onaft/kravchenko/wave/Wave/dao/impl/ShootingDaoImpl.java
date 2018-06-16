@@ -43,7 +43,7 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
                 "sh.id_shooting, sh.id_type_shooting, sh.purpose, sh.date_start, sh.date_end,\n" +
                 "tsh.name as type_shooting_name\n" +
                 "FROM public.events even, public.contracts con, public.shooting sh, public.shooting_groups shg, public.types_shooting tsh\n" +
-                "Where CURRENT_DATE < sh.date_start and\n" +
+                "Where CURRENT_DATE < to_date(sh.date_start, 'YYYY-MM-DD HH24:MI:SS') and\n" +
                 " (shg.id_employee = "+id_employee+" and shg.id_shooting = sh.id_shooting and\n" +
                 "  tsh.id_type_shooting=sh.id_type_shooting and sh.id_shooting = con.id_shooting and con.id_event = even.id_event)";
         List<Event> events = getJdbcTemplate().query(sql, new EventRowMapper());
@@ -57,7 +57,7 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
                 "sh.id_shooting, sh.id_type_shooting, sh.purpose, sh.date_start, sh.date_end,\n" +
                 "tsh.name as type_shooting_name\n" +
                 "FROM public.events even, public.contracts con, public.shooting sh, public.types_shooting tsh\n" +
-                "Where CURRENT_DATE < sh.date_start and\n" +
+                "Where CURRENT_DATE < to_date(sh.date_start, 'YYYY-MM-DD HH24:MI:SS') and\n" +
                 " (tsh.id_type_shooting=sh.id_type_shooting and sh.id_shooting = con.id_shooting and con.id_event = even.id_event)";
         List<Event> events = getJdbcTemplate().query(sql, new EventRowMapper());
         return events;
@@ -135,7 +135,7 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     @Override
     public Shooting findShootingByShooting(int id_shooting) {
-        String sql = "SELECT s.id_shooting, s.id_type_shooting, s.purpose, ts.name\n" +
+        String sql = "SELECT s.id_shooting, s.id_type_shooting, s.purpose, ts.name, s.date_start, s.date_end\n" +
                 "\tFROM public.shooting as s, public.types_shooting ts\n" +
                 "\tWHERE "+String.valueOf(id_shooting)+" = s.id_shooting and s.id_type_shooting = ts.id_type_shooting;";
         Shooting shooting = getJdbcTemplate().queryForObject(
@@ -149,6 +149,8 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
                         shooting1.setPurpose(resultSet.getString(3));
                         typeShooting.setName(resultSet.getString(4));
                         shooting1.setTypeShooting(typeShooting);
+                        shooting1.setDate_start(resultSet.getString(5));
+                        shooting1.setDate_end(resultSet.getString(6));
                         return shooting1;
                     }
                 });
@@ -221,8 +223,8 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
                                 connection.prepareStatement(sql, new String[] {"id_shooting"});
                         ps.setInt(1, shooting.getTypeShooting().getId_type_shooting());
                         ps.setString(2, shooting.getPurpose());
-                        ps.setTimestamp(3, shooting.getDate_start());
-                        ps.setTimestamp(4, shooting.getDate_end());
+                        ps.setString(3, shooting.getDate_start());
+                        ps.setString(4, shooting.getDate_end());
                         return ps;
                     }
                 },
@@ -271,8 +273,8 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
 
     @Override
     public String deleteShooting(String id_shooting) {
-        String sql = "DELETE FROM shooting WHERE id_shooting = ?";
-        int res =  getJdbcTemplate().update(sql, new Object[]{id_shooting});
+        String sql = "DELETE FROM shooting WHERE id_shooting = "+id_shooting+";";
+        int res =  getJdbcTemplate().update(sql, new Object[]{});
         if (res==1)
             return "Done";
         return "Error";

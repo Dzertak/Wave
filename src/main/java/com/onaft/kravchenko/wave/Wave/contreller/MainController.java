@@ -132,12 +132,8 @@ public class MainController {
     @RequestMapping(value = "/addShooting",
             method = RequestMethod.POST,
             produces = "application/json")
-    public Shooting addShooting(@RequestBody String shooting){
-        Type type = new TypeToken<Shooting>() {
-        }.getType();
-        Gson gson  = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss.SSS").create();
-        Shooting shooting1 = gson.fromJson(shooting, type);
-        return shootingService.addShooting(shooting1);
+    public Shooting addShooting(@RequestBody Shooting shooting){
+        return shootingService.addShooting(shooting);
     }
 
     @RequestMapping(value = "/addShootingGroup",

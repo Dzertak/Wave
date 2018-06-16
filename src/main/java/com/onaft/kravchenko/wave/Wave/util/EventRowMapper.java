@@ -22,8 +22,8 @@ public class EventRowMapper implements RowMapper<Event> {
         TypeShooting typeShooting = new TypeShooting();
         typeShooting.setId_type_shooting(resultSet.getInt(7));
         shooting.setPurpose(resultSet.getString(8));
-        shooting.setDate_start(resultSet.getTimestamp(9));
-        shooting.setDate_end(resultSet.getTimestamp(10));
+        shooting.setDate_start(resultSet.getString(9));
+        shooting.setDate_end(resultSet.getString(10));
         typeShooting.setName(resultSet.getString(11));
         shooting.setTypeShooting(typeShooting);
         event.setShooting(shooting);
