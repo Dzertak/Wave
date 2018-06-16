@@ -5,8 +5,6 @@ import java.util.Date;
 
 public class Employee implements Serializable {
     private int id_employee;
-    private Date date_reg;
-    private Date date_birthday;
     private String name;
     private String code_pas;
     private String code_ident;
@@ -18,10 +16,8 @@ public class Employee implements Serializable {
 
     }
 
-    public Employee(int id_employee, Date date_reg, Date date_birthday, String name, String code_pas, String code_ident, String phone, String address, int id_position) {
+    public Employee(int id_employee, String name, String code_pas, String code_ident, String phone, String address, int id_position) {
         this.id_employee = id_employee;
-        this.date_reg = date_reg;
-        this.date_birthday = date_birthday;
         this.name = name;
         this.code_pas = code_pas;
         this.code_ident = code_ident;
@@ -38,21 +34,6 @@ public class Employee implements Serializable {
         this.id_employee = id_employee;
     }
 
-    public Date getDate_reg() {
-        return date_reg;
-    }
-
-    public void setDate_reg(Date date_reg) {
-        this.date_reg = date_reg;
-    }
-
-    public Date getDate_birthday() {
-        return date_birthday;
-    }
-
-    public void setDate_birthday(Date date_birthday) {
-        this.date_birthday = date_birthday;
-    }
 
     public String getName() {
         return name;
