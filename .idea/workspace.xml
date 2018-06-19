@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f375916-6cda-4b55-9bb4-9487bcdc8679" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/util/WorkRating.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/ShootingDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/ShootingDao.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/ShootingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/ShootingService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/impl/ShootingServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/impl/ShootingServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +72,8 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="156" column="42" lean-forward="true" selection-start-line="156" selection-start-column="42" selection-end-line="156" selection-end-column="42" />
+            <state relative-caret-position="65">
+              <caret line="161" column="44" lean-forward="false" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1067#1068#0" expanded="true" />
@@ -108,57 +103,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShootingDaoImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShootingDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="293" column="42" lean-forward="false" selection-start-line="293" selection-start-column="42" selection-end-line="293" selection-end-column="42" />
+            <state relative-caret-position="119">
+              <caret line="300" column="56" lean-forward="true" selection-start-line="300" selection-start-column="56" selection-end-line="300" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1494#1495#0" expanded="true" />
                 <element signature="e#1535#1536#0" expanded="true" />
                 <element signature="e#12922#12923#0" expanded="true" />
                 <element signature="e#13003#13004#0" expanded="true" />
-                <marker date="1529423361074" expanded="true" signature="1632:1644" ph="SELECT even.... events" />
-                <marker date="1529423361074" expanded="true" signature="1632:2339" ph="SELECT even.... events" />
-                <marker date="1529423361074" expanded="true" signature="2533:3113" ph="SELECT even.... events" />
-                <marker date="1529423361074" expanded="true" signature="3301:3428" ph="SELECT even.... events" />
-                <marker date="1529423361074" expanded="true" signature="3301:3429" ph="SELECT even.... events" />
-                <marker date="1529423361074" expanded="true" signature="3301:3447" ph="SELECT even.... events" />
-                <marker date="1529423361074" expanded="true" signature="3659:3666" ph="SELECT even.... events" />
-                <marker date="1529423361074" expanded="true" signature="3659:3680" ph="SELECT * FRO... types_s" />
-                <marker date="1529423361074" expanded="true" signature="3659:3687" ph="SELECT * FRO... types_shooting" />
-                <marker date="1529423361074" expanded="true" signature="3929:3973" ph="SELECT * FRO... employees" />
-                <marker date="1529423361074" expanded="true" signature="4199:4222" ph="SELECT * FRO... customers" />
-                <marker date="1529423361074" expanded="true" signature="4464:4688" ph="SELECT c.id_... customers" />
-                <marker date="1529423361074" expanded="true" signature="4464:4745" ph="SELECT c.id_... customers" />
-                <marker date="1529423361074" expanded="true" signature="4464:4753" ph="SELECT cus.i... customers" />
-                <marker date="1529423361074" expanded="true" signature="5559:5691" ph="SELECT cid_c... contracts" />
-                <marker date="1529423361074" expanded="true" signature="6461:6625" ph="SELECT id_sh... shooting" />
-                <marker date="1529423361074" expanded="true" signature="6461:6653" ph="SELECT id_sh... shooting" />
-                <marker date="1529423361074" expanded="true" signature="6461:6654" ph="SELECT id_sh... shooting" />
-                <marker date="1529423361074" expanded="true" signature="6461:6746" ph="SELECT id_sh... shooting" />
-                <marker date="1529423361074" expanded="true" signature="7853:8154" ph="SELECT e.id_... employees" />
-                <marker date="1529423361074" expanded="true" signature="8402:8476" ph="INSERT INTO customers... " />
-                <marker date="1529423361074" expanded="true" signature="9346:9447" ph="INSERT INTO evevts... " />
-                <marker date="1529423361074" expanded="true" signature="10370:10481" ph="INSERT INTO shooting... " />
-                <marker date="1529423361074" expanded="true" signature="11454:11533" ph="INSERT INTO contracts... " />
-                <marker date="1529423361074" expanded="true" signature="12386:12479" ph="INSERT INTO shooting_groups... " />
-                <marker date="1529423361074" expanded="true" signature="13248:13288" ph="DELETE FROM shooting... " />
-                <marker date="1529423361074" expanded="true" signature="13248:13289" ph="DELETE FROM shooting... " />
-                <marker date="1529423361074" expanded="true" signature="13511:14492" ph="{...}" />
-                <marker date="1529423361074" expanded="true" signature="13535:14341" ph="SELECT emp.i... employees" />
-                <marker date="1529423361074" expanded="true" signature="13535:14342" ph="SELECT * FRO... employees" />
-                <marker date="1529423361074" expanded="true" signature="13751:14121" ph="Select emp.i... employees" />
+                <marker date="1529442344783" expanded="true" signature="1632:1644" ph="SELECT even.... events" />
+                <marker date="1529442344783" expanded="true" signature="1632:2339" ph="SELECT even.... events" />
+                <marker date="1529442344783" expanded="true" signature="2533:3113" ph="SELECT even.... events" />
+                <marker date="1529442344783" expanded="true" signature="3301:3428" ph="SELECT even.... events" />
+                <marker date="1529442344783" expanded="true" signature="3301:3429" ph="SELECT even.... events" />
+                <marker date="1529442344783" expanded="true" signature="3301:3447" ph="SELECT even.... events" />
+                <marker date="1529442344783" expanded="true" signature="3659:3666" ph="SELECT even.... events" />
+                <marker date="1529442344783" expanded="true" signature="3659:3680" ph="SELECT * FRO... types_s" />
+                <marker date="1529442344783" expanded="true" signature="3659:3687" ph="SELECT * FRO... types_shooting" />
+                <marker date="1529442344783" expanded="true" signature="3929:3973" ph="SELECT * FRO... employees" />
+                <marker date="1529442344783" expanded="true" signature="4199:4222" ph="SELECT * FRO... customers" />
+                <marker date="1529442344783" expanded="true" signature="4464:4688" ph="SELECT c.id_... customers" />
+                <marker date="1529442344783" expanded="true" signature="4464:4745" ph="SELECT c.id_... customers" />
+                <marker date="1529442344783" expanded="true" signature="4464:4753" ph="SELECT cus.i... customers" />
+                <marker date="1529442344783" expanded="true" signature="5559:5691" ph="SELECT cid_c... contracts" />
+                <marker date="1529442344783" expanded="true" signature="6461:6625" ph="SELECT id_sh... shooting" />
+                <marker date="1529442344783" expanded="true" signature="6461:6653" ph="SELECT id_sh... shooting" />
+                <marker date="1529442344783" expanded="true" signature="6461:6654" ph="SELECT id_sh... shooting" />
+                <marker date="1529442344783" expanded="true" signature="6461:6746" ph="SELECT id_sh... shooting" />
+                <marker date="1529442344783" expanded="true" signature="7853:8154" ph="SELECT e.id_... employees" />
+                <marker date="1529442344783" expanded="true" signature="8402:8476" ph="INSERT INTO customers... " />
+                <marker date="1529442344783" expanded="true" signature="9346:9447" ph="INSERT INTO evevts... " />
+                <marker date="1529442344783" expanded="true" signature="10370:10481" ph="INSERT INTO shooting... " />
+                <marker date="1529442344783" expanded="true" signature="11454:11533" ph="INSERT INTO contracts... " />
+                <marker date="1529442344783" expanded="true" signature="12386:12479" ph="INSERT INTO shooting_groups... " />
+                <marker date="1529442344783" expanded="true" signature="13248:13288" ph="DELETE FROM shooting... " />
+                <marker date="1529442344783" expanded="true" signature="13248:13289" ph="DELETE FROM shooting... " />
+                <marker date="1529442344783" expanded="true" signature="13535:14527" ph="SELECT emp.i... employees" />
+                <marker date="1529442344783" expanded="true" signature="13535:14528" ph="SELECT * FRO... employees" />
+                <marker date="1529442344783" expanded="true" signature="13754:14124" ph="Select emp.i... employees" />
+                <marker date="1529442344783" expanded="true" signature="14135:14274" ph="SELECT sum(D... shooting" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkRating.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WorkRating.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/util/WorkRating.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="31">
               <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="30" />
               <folding>
                 <element signature="e#396#397#0" expanded="true" />
@@ -341,10 +336,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/util/WorkRating.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/ShootingDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/ShootingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/impl/ShootingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -637,7 +632,7 @@
       <workItem from="1527351426994" duration="19414000" />
       <workItem from="1528301169437" duration="20491000" />
       <workItem from="1528535438554" duration="39173000" />
-      <workItem from="1529004453754" duration="15325000" />
+      <workItem from="1529004453754" duration="16655000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1522583449690</created>
@@ -828,11 +823,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529225338805</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add method get rating to work">
+      <created>1529423522679</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1529423522679</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112222000" />
+    <option name="totallyTimeSpent" value="113552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -878,7 +880,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change models" />
     <MESSAGE value="change models and controller insertAccount" />
     <MESSAGE value="add authorize" />
     <MESSAGE value="add authorize fix" />
@@ -903,7 +904,8 @@
     <MESSAGE value="fix error add shooting group 3" />
     <MESSAGE value="fix error add shooting group 4. delete fields from employees" />
     <MESSAGE value="fix get employees by id shooting" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix get employees by id shooting" />
+    <MESSAGE value="add method get rating to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="add method get rating to work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1518,51 +1520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="293" column="42" lean-forward="false" selection-start-line="293" selection-start-column="42" selection-end-line="293" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#12922#12923#0" expanded="true" />
-            <element signature="e#13003#13004#0" expanded="true" />
-            <marker date="1529423361074" expanded="true" signature="1632:1644" ph="SELECT even.... events" />
-            <marker date="1529423361074" expanded="true" signature="1632:2339" ph="SELECT even.... events" />
-            <marker date="1529423361074" expanded="true" signature="2533:3113" ph="SELECT even.... events" />
-            <marker date="1529423361074" expanded="true" signature="3301:3428" ph="SELECT even.... events" />
-            <marker date="1529423361074" expanded="true" signature="3301:3429" ph="SELECT even.... events" />
-            <marker date="1529423361074" expanded="true" signature="3301:3447" ph="SELECT even.... events" />
-            <marker date="1529423361074" expanded="true" signature="3659:3666" ph="SELECT even.... events" />
-            <marker date="1529423361074" expanded="true" signature="3659:3680" ph="SELECT * FRO... types_s" />
-            <marker date="1529423361074" expanded="true" signature="3659:3687" ph="SELECT * FRO... types_shooting" />
-            <marker date="1529423361074" expanded="true" signature="3929:3973" ph="SELECT * FRO... employees" />
-            <marker date="1529423361074" expanded="true" signature="4199:4222" ph="SELECT * FRO... customers" />
-            <marker date="1529423361074" expanded="true" signature="4464:4688" ph="SELECT c.id_... customers" />
-            <marker date="1529423361074" expanded="true" signature="4464:4745" ph="SELECT c.id_... customers" />
-            <marker date="1529423361074" expanded="true" signature="4464:4753" ph="SELECT cus.i... customers" />
-            <marker date="1529423361074" expanded="true" signature="5559:5691" ph="SELECT cid_c... contracts" />
-            <marker date="1529423361074" expanded="true" signature="6461:6625" ph="SELECT id_sh... shooting" />
-            <marker date="1529423361074" expanded="true" signature="6461:6653" ph="SELECT id_sh... shooting" />
-            <marker date="1529423361074" expanded="true" signature="6461:6654" ph="SELECT id_sh... shooting" />
-            <marker date="1529423361074" expanded="true" signature="6461:6746" ph="SELECT id_sh... shooting" />
-            <marker date="1529423361074" expanded="true" signature="7853:8154" ph="SELECT e.id_... employees" />
-            <marker date="1529423361074" expanded="true" signature="8402:8476" ph="INSERT INTO customers... " />
-            <marker date="1529423361074" expanded="true" signature="9346:9447" ph="INSERT INTO evevts... " />
-            <marker date="1529423361074" expanded="true" signature="10370:10481" ph="INSERT INTO shooting... " />
-            <marker date="1529423361074" expanded="true" signature="11454:11533" ph="INSERT INTO contracts... " />
-            <marker date="1529423361074" expanded="true" signature="12386:12479" ph="INSERT INTO shooting_groups... " />
-            <marker date="1529423361074" expanded="true" signature="13248:13288" ph="DELETE FROM shooting... " />
-            <marker date="1529423361074" expanded="true" signature="13248:13289" ph="DELETE FROM shooting... " />
-            <marker date="1529423361074" expanded="true" signature="13511:14492" ph="{...}" />
-            <marker date="1529423361074" expanded="true" signature="13535:14341" ph="SELECT emp.i... employees" />
-            <marker date="1529423361074" expanded="true" signature="13535:14342" ph="SELECT * FRO... employees" />
-            <marker date="1529423361074" expanded="true" signature="13751:14121" ph="Select emp.i... employees" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/service/ShootingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -1611,10 +1568,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/util/WorkRating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/contreller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="156" column="42" lean-forward="true" selection-start-line="156" selection-start-column="42" selection-end-line="156" selection-end-column="42" />
+        <state relative-caret-position="65">
+          <caret line="161" column="44" lean-forward="false" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1067#1068#0" expanded="true" />
@@ -1643,19 +1617,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/util/WorkRating.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/onaft/kravchenko/wave/Wave/dao/impl/ShootingDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="119">
+          <caret line="300" column="56" lean-forward="true" selection-start-line="300" selection-start-column="56" selection-end-line="300" selection-end-column="56" />
           <folding>
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#12922#12923#0" expanded="true" />
+            <element signature="e#13003#13004#0" expanded="true" />
+            <marker date="1529442344783" expanded="true" signature="1632:1644" ph="SELECT even.... events" />
+            <marker date="1529442344783" expanded="true" signature="1632:2339" ph="SELECT even.... events" />
+            <marker date="1529442344783" expanded="true" signature="2533:3113" ph="SELECT even.... events" />
+            <marker date="1529442344783" expanded="true" signature="3301:3428" ph="SELECT even.... events" />
+            <marker date="1529442344783" expanded="true" signature="3301:3429" ph="SELECT even.... events" />
+            <marker date="1529442344783" expanded="true" signature="3301:3447" ph="SELECT even.... events" />
+            <marker date="1529442344783" expanded="true" signature="3659:3666" ph="SELECT even.... events" />
+            <marker date="1529442344783" expanded="true" signature="3659:3680" ph="SELECT * FRO... types_s" />
+            <marker date="1529442344783" expanded="true" signature="3659:3687" ph="SELECT * FRO... types_shooting" />
+            <marker date="1529442344783" expanded="true" signature="3929:3973" ph="SELECT * FRO... employees" />
+            <marker date="1529442344783" expanded="true" signature="4199:4222" ph="SELECT * FRO... customers" />
+            <marker date="1529442344783" expanded="true" signature="4464:4688" ph="SELECT c.id_... customers" />
+            <marker date="1529442344783" expanded="true" signature="4464:4745" ph="SELECT c.id_... customers" />
+            <marker date="1529442344783" expanded="true" signature="4464:4753" ph="SELECT cus.i... customers" />
+            <marker date="1529442344783" expanded="true" signature="5559:5691" ph="SELECT cid_c... contracts" />
+            <marker date="1529442344783" expanded="true" signature="6461:6625" ph="SELECT id_sh... shooting" />
+            <marker date="1529442344783" expanded="true" signature="6461:6653" ph="SELECT id_sh... shooting" />
+            <marker date="1529442344783" expanded="true" signature="6461:6654" ph="SELECT id_sh... shooting" />
+            <marker date="1529442344783" expanded="true" signature="6461:6746" ph="SELECT id_sh... shooting" />
+            <marker date="1529442344783" expanded="true" signature="7853:8154" ph="SELECT e.id_... employees" />
+            <marker date="1529442344783" expanded="true" signature="8402:8476" ph="INSERT INTO customers... " />
+            <marker date="1529442344783" expanded="true" signature="9346:9447" ph="INSERT INTO evevts... " />
+            <marker date="1529442344783" expanded="true" signature="10370:10481" ph="INSERT INTO shooting... " />
+            <marker date="1529442344783" expanded="true" signature="11454:11533" ph="INSERT INTO contracts... " />
+            <marker date="1529442344783" expanded="true" signature="12386:12479" ph="INSERT INTO shooting_groups... " />
+            <marker date="1529442344783" expanded="true" signature="13248:13288" ph="DELETE FROM shooting... " />
+            <marker date="1529442344783" expanded="true" signature="13248:13289" ph="DELETE FROM shooting... " />
+            <marker date="1529442344783" expanded="true" signature="13535:14527" ph="SELECT emp.i... employees" />
+            <marker date="1529442344783" expanded="true" signature="13535:14528" ph="SELECT * FRO... employees" />
+            <marker date="1529442344783" expanded="true" signature="13754:14124" ph="Select emp.i... employees" />
+            <marker date="1529442344783" expanded="true" signature="14135:14274" ph="SELECT sum(D... shooting" />
           </folding>
         </state>
       </provider>
