@@ -8,6 +8,7 @@ import com.onaft.kravchenko.wave.Wave.service.AccountService;
 import com.onaft.kravchenko.wave.Wave.service.impl.AccountServiceImpl;
 import com.onaft.kravchenko.wave.Wave.service.impl.ShootingServiceImpl;
 import com.onaft.kravchenko.wave.Wave.util.ShootingGroupRequest;
+import com.onaft.kravchenko.wave.Wave.util.WorkRating;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -156,5 +157,12 @@ public class MainController {
             produces = "application/json")
     public String deleteShooting(@RequestParam("id_shooting") String id_shooting){
         return shootingService.deleteShooting(id_shooting);
+    }
+
+    @RequestMapping(value = "/findWorkRating",
+            method = RequestMethod.GET,
+            produces = "application/json")
+    public List<WorkRating> findWorkRating(){
+        return shootingService.findWorkRating();
     }
 }

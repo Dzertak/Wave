@@ -4,6 +4,7 @@ import com.onaft.kravchenko.wave.Wave.dao.ShootingDao;
 import com.onaft.kravchenko.wave.Wave.model.*;
 import com.onaft.kravchenko.wave.Wave.service.ShootingService;
 import com.onaft.kravchenko.wave.Wave.util.ShootingGroupRequest;
+import com.onaft.kravchenko.wave.Wave.util.WorkRating;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -93,5 +94,10 @@ public class ShootingServiceImpl implements ShootingService {
     @Override
     public String deleteShooting(String id_shooting) {
         return shootingDao.deleteShooting(id_shooting);
+    }
+
+    @Override
+    public List<WorkRating> findWorkRating() {
+        return shootingDao.findWorkRating();
     }
 }

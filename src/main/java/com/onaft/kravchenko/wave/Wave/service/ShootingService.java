@@ -2,6 +2,7 @@ package com.onaft.kravchenko.wave.Wave.service;
 
 import com.onaft.kravchenko.wave.Wave.model.*;
 import com.onaft.kravchenko.wave.Wave.util.ShootingGroupRequest;
+import com.onaft.kravchenko.wave.Wave.util.WorkRating;
 
 import java.util.List;
 
@@ -22,4 +23,6 @@ public interface ShootingService {
     Contract addContract(Contract contract);
     String addShootingGroup(ShootingGroupRequest groupRequest);
     String deleteShooting(String id_shooting);
+    List<WorkRating> findWorkRating();
+
 }

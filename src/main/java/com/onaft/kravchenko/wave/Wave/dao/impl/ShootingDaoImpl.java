@@ -5,6 +5,7 @@ import com.onaft.kravchenko.wave.Wave.model.*;
 import com.onaft.kravchenko.wave.Wave.service.ShootingService;
 import com.onaft.kravchenko.wave.Wave.util.EventRowMapper;
 import com.onaft.kravchenko.wave.Wave.util.ShootingGroupRequest;
+import com.onaft.kravchenko.wave.Wave.util.WorkRating;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
@@ -287,6 +288,20 @@ public class ShootingDaoImpl extends JdbcDaoSupport implements ShootingDao {
         if (res==1)
             return "Done";
         return "Error";
+    }
+
+    @Override
+    public List<WorkRating> findWorkRating() {
+        String sql = "SELECT emp.id_employee, sum_sh.sum_shooting/(sum(sum_sh.sum_shooting)/100) as work_interest\n" +
+                "\tFROM public.employees emp, public.shooting_groups shg, public.shooting sh,\n" +
+                "\t(Select emp.id_employee as sum_id_employee, sum(DATE_PART('hour', date_end::timestamp - date_start::timestamp)) as sum_shooting\n" +
+                "\tFrom public.employees emp, public.shooting_groups shg, public.shooting sh\n" +
+                "\tWhere emp.id_employee=shg.id_employee and shg.id_shooting=sh.id_shooting\n" +
+                "\tgroup by emp.id_employee) sum_sh\n" +
+                "\twhere sum_sh.sum_id_employee=emp.id_employee and emp.id_employee=shg.id_employee and shg.id_shooting=sh.id_shooting\n" +
+                "\tGROUP BY (emp.id_employee, sum_sh.sum_shooting);";
+        List<WorkRating> workRatings = getJdbcTemplate().query(sql, new BeanPropertyRowMapper(WorkRating.class));
+        return workRatings;
     }
 
 
